@@ -8,6 +8,81 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container-fluid">
+		<form class="row g-3 mt-5 ms-5 was-validated">
+
+			<div class="col-md-3">
+				<label for="first-name-input" class="form-label">First Name</label>
+				<input type="text" class="form-control is-invalid" id="first-name-input" required>
+			    <div class="invalid-feedback">
+					First Name required
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<label for="last-name-input" class="form-label">Last Name</label>
+				<input type="text" class="form-control is-invalid" id="last-name-input" required>
+			    <div class="invalid-feedback">
+					Last Name required
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<label for="email-input" class="form-label">Email Addrress</label>
+				<input type="email" class="form-control is-invalid" id="email-input" placeholder="xyz@abc.com" required>
+			    <div class="invalid-feedback">
+					Email required
+				</div>
+			</div>
+
+			<div class="col-5">
+				<label for="college-input" class="form-label">College</label>
+				<input type="text" class="form-control is-invalid" id="college-input" placehoder="Lovely Professional Univercity" required>
+			    <div class="invalid-feedback">
+					Please provide a valid College.
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<input for="grad-year-selected" class="form-label">Graduation Year</label>
+			    <select class="form-select id-invalid" aria-label="Default select example" id="grad-year-selected" required>
+					<option selected>Choose...</option>
+					<option value="2020">2020</option>
+					<option value="2021">2021</option>
+					<option value="2022">2022</option>
+					<option value="2023">2023</option>
+				</select>
+
+				<div class="invalid-feedback">
+					Pleas select valid Graduation Year.
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<label for="roll-no-input" class="form-label">Roll.No</label>
+				<input type="text" class="form-control is-invalid" id="roll-no-input" required>
+			    <div class="invalid-feedback">
+					Please provide a valid Roll.No.
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="from-check-input is-invalid" type="checkbox" id="condition-checkbox" required>
+					<label class="from-check-label" for="condition-chekbox">
+						Agree to terms and condition
+					</label>
+				<div class="invalid-feedback">
+					You must agrre before submitting.
+				</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<button type="submit" class="btn btn-primary">Submit form</button>
+			</div>
+
+
+		</form>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
